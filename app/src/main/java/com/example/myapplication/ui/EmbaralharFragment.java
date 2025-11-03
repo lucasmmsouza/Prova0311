@@ -1,6 +1,8 @@
 package com.example.myapplication.ui;
+
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer; // Importar o Observer
 import androidx.lifecycle.ViewModelProvider;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,9 +29,13 @@ public class EmbaralharFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_embaralhar, container, false);
         listViewEmbaralhar = view.findViewById(R.id.listViewEmbaralhar);
         dataViewModel = new ViewModelProvider(requireActivity()).get(DataViewModel.class);
-        dataViewModel.getElementos().observe(getViewLifecycleOwner(), elementos -> {
-            if (elementos != null) {
-                calcularEExibir(elementos);
+
+        dataViewModel.getElementos().observe(getViewLifecycleOwner(), new Observer<List<Elemento>>() {
+            @Override
+            public void onChanged(List<Elemento> elementos) {
+                if (elementos != null) {
+                    calcularEExibir(elementos);
+                }
             }
         });
 
