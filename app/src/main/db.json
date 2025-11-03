@@ -1,0 +1,75 @@
+{
+  "elementos": [
+    {
+      "elemento": "Hidrogenio"
+    },
+    {
+      "elemento": "Litio"
+    },
+    {
+      "elemento": "Sodio"
+    },
+    {
+      "elemento": "Potassio"
+    },
+    {
+      "elemento": "Rubidio"
+    },
+    {
+      "elemento": "Cesio"
+    },
+    {
+      "elemento": "Francio"
+    }
+  ],
+
+
+  "simbolos": [
+    {
+      "símbolo": "H"
+    },
+    {
+      "símbolo": "Li"
+    },
+    {
+      "símbolo": "Na"
+    },
+    {
+      "símbolo": "k"
+    },
+    {
+      "símbolo": "Rb"
+    },
+    {
+      "símbolo": "Cs"
+    },
+    {
+      "símbolo": "Fr"
+    }
+  ],
+
+
+  "numeros": [
+    {
+      "valor": 1
+    },
+    {
+      "valor": 3
+    },
+    {
+      "valor": 11
+    },
+    {
+      "valor": 19
+    },
+    {
+      "valor": 37
+    },
+    {
+      "valor": 55
+    },
+    {
+      "valor": 87
+    }
+  ]
+}
